@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             script-src 'self' 'unsafe-inline';
+             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+             font-src 'self' https://fonts.gstatic.com;
+             img-src 'self' data:;
+             connect-src 'self' https://api.exchangerate-api.com;
+             frame-ancestors 'none';" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="no-referrer" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>حاسبة العملات | موقع آمن</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== الهيدر ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">💱</span>
+        <span class="logo-text">حاسبة العملات</span>
+      </div>
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a href="#" class="nav-link" data-page="home">الرئيسية</a>
+        <a href="#" class="nav-link" data-page="calculator">الحاسبة</a>
+        <a href="#" class="nav-link" data-page="privacy">الخصوصية</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== صفحة الرئيسية ========== -->
+  <div id="page-home" class="page">
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="security-badge">
+            <span class="badge-icon">🔒</span>
+            <span>موقع آمن — لا نجمع أي بيانات</span>
+          </div>
+          <h1 class="hero-title">حوّل عملتك<br /><span class="accent">بسرعة وأمان</span></h1>
+          <p class="hero-sub">
+            حاسبة عملات فورية تدعم الجنيه السوداني، اليورو، الدولار، الريال السعودي
+            وأكثر من ٢٠ عملة — بدون تتبع، بدون إعلانات، بدون جمع بيانات.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" data-page="calculator">ابدأ التحويل ←</a>
+            <a href="#" class="btn btn-outline" data-page="privacy">سياسة الخصوصية</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="currency-card">
+            <div class="currency-flag">🇸🇩</div>
+            <div class="currency-info">
+              <span class="currency-code">SDG</span>
+              <span class="currency-name">جنيه سوداني</span>
+            </div>
+          </div>
+          <div class="swap-arrow">⇄</div>
+          <div class="currency-card">
+            <div class="currency-flag">🇪🇺</div>
+            <div class="currency-info">
+              <span class="currency-code">EUR</span>
+              <span class="currency-name">يورو</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚫</div>
+            <h3>لا تتبع</h3>
+            <p>لا Google Analytics، لا Facebook Pixel، لا أي أداة تتبع من أي نوع.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🍪</div>
+            <h3>لا كوكيز</h3>
+            <p>لا نستخدم ملفات الكوكيز ولا نخزن أي معلومات في جهازك.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>بيانات آمنة</h3>
+            <p>الحسابات تتم على جهازك مباشرة. لا نرسل أي بيانات لخوادم خارجية.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>مفتوح المصدر</h3>
+            <p>الكود واضح وشفاف. يمكنك مراجعته في أي وقت.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="currencies-section">
+        <h2 class="section-title">العملات المدعومة</h2>
+        <div class="currencies-grid">
+          <div class="currency-item"><span>🇸🇩</span> جنيه سوداني SDG</div>
+          <div class="currency-item"><span>🇺🇸</span> دولار أمريكي USD</div>
+          <div class="currency-item"><span>🇪🇺</span> يورو EUR</div>
+          <div class="currency-item"><span>🇬🇧</span> جنيه إسترليني GBP</div>
+          <div class="currency-item"><span>🇸🇦</span> ريال سعودي SAR</div>
+          <div class="currency-item"><span>🇦🇪</span> درهم إماراتي AED</div>
+          <div class="currency-item"><span>🇪🇬</span> جنيه مصري EGP</div>
+          <div class="currency-item"><span>🇯🇵</span> ين ياباني JPY</div>
+          <div class="currency-item"><span>🇨🇭</span> فرنك سويسري CHF</div>
+          <div class="currency-item"><span>🇨🇦</span> دولار كندي CAD</div>
+          <div class="currency-item"><span>🇹🇷</span> ليرة تركية TRY</div>
+          <div class="currency-item"><span>🇨🇳</span> يوان صيني CNY</div>
+        </div>
+        <div class="cta-center">
+          <a href="#" class="btn btn-primary" data-page="calculator">افتح الحاسبة ←</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ========== صفحة الحاسبة ========== -->
+  <div id="page-calculator" class="page hidden">
+    <main class="calc-main">
+      <div class="calc-container">
+        <div class="calc-header">
+          <h1>حاسبة العملات</h1>
+          <p class="calc-subtitle">أسعار تقريبية — لا نخزن أي من بياناتك</p>
+        </div>
+
+        <div class="calc-card">
+          <div class="input-group">
+            <label for="amount-from">المبلغ</label>
+            <div class="input-row">
+              <input type="number" id="amount-from" class="amount-input"
+                placeholder="أدخل المبلغ" min="0" step="any" autocomplete="off" />
+              <select id="currency-from" class="currency-select">
+                <option value="SDG">🇸🇩 جنيه سوداني (SDG)</option>
+                <option value="USD" selected>🇺🇸 دولار أمريكي (USD)</option>
+                <option value="EUR">🇪🇺 يورو (EUR)</option>
+                <option value="GBP">🇬🇧 جنيه إسترليني (GBP)</option>
+                <option value="SAR">🇸🇦 ريال سعودي (SAR)</option>
+                <option value="AED">🇦🇪 درهم إماراتي (AED)</option>
+                <option value="EGP">🇪🇬 جنيه مصري (EGP)</option>
+                <option value="JPY">🇯🇵 ين ياباني (JPY)</option>
+                <option value="CHF">🇨🇭 فرنك سويسري (CHF)</option>
+                <option value="CAD">🇨🇦 دولار كندي (CAD)</option>
+                <option value="TRY">🇹🇷 ليرة تركية (TRY)</option>
+                <option value="CNY">🇨🇳 يوان صيني (CNY)</option>
+                <option value="KWD">🇰🇼 دينار كويتي (KWD)</option>
+                <option value="QAR">🇶🇦 ريال قطري (QAR)</option>
+                <option value="BHD">🇧🇭 دينار بحريني (BHD)</option>
+                <option value="OMR">🇴🇲 ريال عماني (OMR)</option>
+                <option value="JOD">🇯🇴 دينار أردني (JOD)</option>
+                <option value="MAD">🇲🇦 درهم مغربي (MAD)</option>
+                <option value="DZD">🇩🇿 دينار جزائري (DZD)</option>
+                <option value="TND">🇹🇳 دينار تونسي (TND)</option>
+                <option value="ETB">🇪🇹 بر إثيوبي (ETB)</option>
+                <option value="INR">🇮🇳 روبية هندية (INR)</option>
+                <option value="SEK">🇸🇪 كرونة سويدية (SEK)</option>
+                <option value="NOK">🇳🇴 كرونة نرويجية (NOK)</option>
+                <option value="AUD">🇦🇺 دولار أسترالي (AUD)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="swap-row">
+            <button id="swap-btn" class="swap-btn" aria-label="إبدال العملتين">⇄ إبدال</button>
+          </div>
+
+          <div class="input-group">
+            <label for="amount-to">النتيجة</label>
+            <div class="input-row">
+              <input type="number" id="amount-to" class="amount-input result-input"
+                placeholder="—" readonly />
+              <select id="currency-to" class="currency-select">
+                <option value="SDG" selected>🇸🇩 جنيه سوداني (SDG)</option>
+                <option value="USD">🇺🇸 دولار أمريكي (USD)</option>
+                <option value="EUR">🇪🇺 يورو (EUR)</option>
+                <option value="GBP">🇬🇧 جنيه إسترليني (GBP)</option>
+                <option value="SAR">🇸🇦 ريال سعودي (SAR)</option>
+                <option value="AED">🇦🇪 درهم إماراتي (AED)</option>
+                <option value="EGP">🇪🇬 جنيه مصري (EGP)</option>
+                <option value="JPY">🇯🇵 ين ياباني (JPY)</option>
+                <option value="CHF">🇨🇭 فرنك سويسري (CHF)</option>
+                <option value="CAD">🇨🇦 دولار كندي (CAD)</option>
+                <option value="TRY">🇹🇷 ليرة تركية (TRY)</option>
+                <option value="CNY">🇨🇳 يوان صيني (CNY)</option>
+                <option value="KWD">🇰🇼 دينار كويتي (KWD)</option>
+                <option value="QAR">🇶🇦 ريال قطري (QAR)</option>
+                <option value="BHD">🇧🇭 دينار بحريني (BHD)</option>
+                <option value="OMR">🇴🇲 ريال عماني (OMR)</option>
+                <option value="JOD">🇯🇴 دينار أردني (JOD)</option>
+                <option value="MAD">🇲🇦 درهم مغربي (MAD)</option>
+                <option value="DZD">🇩🇿 دينار جزائري (DZD)</option>
+                <option value="TND">🇹🇳 دينار تونسي (TND)</option>
+                <option value="ETB">🇪🇹 بر إثيوبي (ETB)</option>
+                <option value="INR">🇮🇳 روبية هندية (INR)</option>
+                <option value="SEK">🇸🇪 كرونة سويدية (SEK)</option>
+                <option value="NOK">🇳🇴 كرونة نرويجية (NOK)</option>
+                <option value="AUD">🇦🇺 دولار أسترالي (AUD)</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="convert-btn" class="btn btn-primary btn-full">تحويل العملة</button>
+
+          <div id="result-box" class="result-box hidden">
+            <div class="result-rate" id="result-rate"></div>
+            <div class="result-detail" id="result-detail"></div>
+            <div class="result-disclaimer">⚠️ الأسعار تقريبية للمعلومات فقط</div>
+          </div>
+
+          <div id="error-box" class="error-box hidden">
+            <span>⚠️ </span><span id="error-msg"></span>
+          </div>
+        </div>
+
+        <div class="table-section">
+          <h2>جدول التحويل السريع</h2>
+          <p class="table-note">يعرض الجدول قيمة ١ وحدة من كل عملة بالجنيه السوداني (SDG)</p>
+          <div class="table-wrapper">
+            <table class="rates-table">
+              <thead>
+                <tr>
+                  <th>العملة</th>
+                  <th>الرمز</th>
+                  <th>سعر الصرف (SDG)</th>
+                </tr>
+              </thead>
+              <tbody id="rates-body">
+                <tr><td colspan="3" class="loading-row">جارٍ تحميل الأسعار...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== صفحة الخصوصية ========== -->
+  <div id="page-privacy" class="page hidden">
+    <main class="privacy-main">
+      <div class="privacy-container">
+
+        <div class="privacy-hero">
+          <div class="privacy-icon">🔒</div>
+          <h1>سياسة الخصوصية</h1>
+          <p class="privacy-tagline">خصوصيتك ليست للبيع — هذا وعدنا.</p>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-badge-row">
+            <span class="privacy-badge green">✅ لا كوكيز</span>
+            <span class="privacy-badge green">✅ لا تتبع</span>
+            <span class="privacy-badge green">✅ لا بيانات شخصية</span>
+            <span class="privacy-badge green">✅ لا إعلانات</span>
+          </div>
+        </div>
+
+        <article class="privacy-content">
+          <section class="privacy-section">
+            <h2>١. ما الذي لا نجمعه</h2>
+            <p>نحن لا نجمع، ولا نخزن، ولا نشارك أي من المعلومات التالية:</p>
+            <ul>
+              <li>الاسم أو البريد الإلكتروني أو رقم الهاتف</li>
+              <li>عنوان IP أو الموقع الجغرافي</li>
+              <li>بيانات الاستخدام أو سجل التصفح</li>
+              <li>المبالغ التي تحولها في الحاسبة</li>
+              <li>أي معلومات مالية أو شخصية من أي نوع</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٢. ملفات الكوكيز (Cookies)</h2>
+            <p>
+              هذا الموقع <strong>لا يستخدم ملفات الكوكيز</strong> مطلقاً —
+              لا للتتبع، لا للتحليلات، لا لأي غرض آخر.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٣. أدوات التتبع والتحليل</h2>
+            <p>لا يحتوي هذا الموقع على أي من الأدوات التالية:</p>
+            <ul>
+              <li>Google Analytics أو Google Tag Manager</li>
+              <li>Facebook Pixel أو Meta Pixel</li>
+              <li>Hotjar أو أي أداة تسجيل للجلسات</li>
+              <li>أي شبكة إعلانية من أي نوع</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٤. أسعار الصرف</h2>
+            <p>
+              تُحمَّل أسعار الصرف من خدمة <strong>ExchangeRate-API</strong> العامة
+              لعرضها في الحاسبة. هذا الطلب لا يحتوي على أي معلومات شخصية.
+              الحسابات تتم على جهازك مباشرة.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٥. الخوادم والتخزين</h2>
+            <p>
+              لا نملك قاعدة بيانات. لا نخزن أي معلومات على خوادمنا.
+              كل ما تفعله في هذا الموقع يبقى على جهازك فقط.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٦. أمان المحتوى (CSP)</h2>
+            <p>
+              يطبّق هذا الموقع سياسة أمان محتوى صارمة (<strong>Content Security Policy</strong>)
+              تمنع تحميل أي موارد غير مرخصة، مما يحمي زوارنا من هجمات XSS.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>٧. تواصل معنا</h2>
+            <p>
+              إذا كان لديك أي سؤال حول سياسة الخصوصية، يمكنك التواصل معنا وسنرد في أقرب وقت.
+            </p>
+          </section>
+        </article>
+
+        <div class="privacy-footer-note">آخر تحديث: يونيو ٢٠٢٤</div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== الفوتر ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-privacy">🔒 هذا الموقع لا يجمع أي بيانات شخصية ولا يستخدم ملفات تتبع.</p>
+      <nav class="footer-nav" aria-label="روابط التذييل">
+        <a href="#" data-page="home">الرئيسية</a>
+        <a href="#" data-page="calculator">الحاسبة</a>
+        <a href="#" data-page="privacy">الخصوصية</a>
+      </nav>
+      <p class="footer-copy">© ٢٠٢٤ حاسبة العملات — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
